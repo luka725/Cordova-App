@@ -22,6 +22,7 @@
 document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady() {
+  window.open = cordova.InAppBrowser.open;
   const url = "https://degusto.r2.software";
   cordova.InAppBrowser.open(
     url,
