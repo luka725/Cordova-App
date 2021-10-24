@@ -25,7 +25,7 @@ function onDeviceReady() {
   const url = "https://degusto.r2.software";
   cordova.InAppBrowser.open(
     url,
-    "_self",
+    "_blank",
     "location=no,zoom=no,toolbar=no,fullscreen=no"
   );
   window.pushNotification.registration(
